@@ -1,0 +1,15 @@
+client:
+  image: bluebu/shadowsocks-privoxy
+
+  restart: always
+  environment:
+    SERVER_ADDR: ${SERVER_ADDR}
+    SERVER_PORT: ${SERVER_PORT}
+    PASSWORD: ${PASSWORD}
+    TIMEOUT: ${TIMEOUT}
+    METHOD: ${METHOD}
+  ports:
+    - "${HTTP_PORT}:8118"
+    - "${SOCKET_PORT}:7070"
+  labels:
+    io.rancher.container.pull_image: always

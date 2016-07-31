@@ -12,13 +12,13 @@
     - variable: PUBLIC_PORT
       description: Public Port
       label: PUBLIC_PORT
-      type: "string"
+      type: "int"
       required: true
-      default: "8899"
+      default: 8899
     - variable: PASSWORD
       description: Service Password
       label: PASSWORD
-      type: "string"
+      type: "password"
       required: true
     - variable: WORKERS
       description: Workers count

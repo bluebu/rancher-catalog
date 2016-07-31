@@ -1,0 +1,63 @@
+.catalog:
+  name: Shadowsocks Client
+  version: v0.0.1
+  description: Easy SS client built with bluebu/shadowsocks-privoxy image
+  questions:
+    - variable: HTTP_PORT
+      description: HTTP PROXY PORT
+      label: HTTP_PORT
+      type: int
+      required: true
+      default: 8118
+    - variable: SOCKET_PORT
+      description: SOCKET PROXY PORT
+      label: SOCKET_PORT
+      type: int
+      required: true
+      default: 7070
+    - variable: SERVER_ADDR
+      description: Server Address
+      label: SERVER_ADDR
+      type: string
+      required: true
+    - variable: SERVER_PORT
+      description: SERVER Port
+      label: SERVER_PORT
+      type: string
+      required: true
+    - variable: PASSWORD
+      description: Service Password
+      label: PASSWORD
+      type: password
+      required: true
+    - variable: METHOD
+      description: METHOD
+      label: METHOD
+      required: true
+      default: aes-256-cfb
+      type: enum   
+      options: 
+        - aes-128-cfb
+        - aes-192-cfb
+        - aes-256-cfb
+        - bf-cfb
+        - camellia-128-cfb
+        - camellia-192-cfb
+        - camellia-256-cfb
+        - cast5-cfb
+        - chacha20
+        - chacha20-ietf
+        - des-cfb
+        - idea-cfb
+        - rc2-cfb
+        - rc4-md5
+        - salsa20
+        - seed-cfb
+    - variable: TIMEOUT
+      description: TIMEOUT
+      label: TIMEOUT
+      type: int
+      required: true
+      default: 60
+client:
+  scale: 1

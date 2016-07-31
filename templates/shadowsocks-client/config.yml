@@ -1,0 +1,6 @@
+name: Shadowsocks Client
+description: |
+  Easy SS client built with bluebu/shadowsocks-privoxy image
+version: v0.0.1
+category: proxy
+projectURL: https://github.com/bluebu/shadowsocks-privoxy
