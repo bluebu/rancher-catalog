@@ -1,0 +1,6 @@
+name: Shadowsocks Server
+description: |
+  Easy SS server built with bluebu/shadowsocks-server image
+version: v0.0.1
+category: proxy
+projectURL: http://www.hi-ruby.com

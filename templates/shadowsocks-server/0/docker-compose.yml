@@ -1,0 +1,12 @@
+server:
+  image: bluebu/shadowsocks-server
+  restart: always
+  environment:
+    SERVER_ADDR: ${SERVER_ADDR}
+    WORKERS: ${WORKERS}
+    PASSWORD: ${PASSWORD}
+    TIMEOUT: ${TIMEOUT}
+  ports:
+    - "${PUBLIC_PORT}:8899"
+  labels:
+    io.rancher.container.pull_image: always
