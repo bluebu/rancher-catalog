@@ -2,8 +2,8 @@
 
 | No.   | Templates | Version | Image | Service |
 | :---: |   :---    |  :---   | :---  |   :---  |
-| 1     | shadowsocks-server | v0.0.1 | [bluebu/shadowsocks-server](https://github.com/bluebu/shadowsocks-server) | shadowsocks server |
-| 2     | shadowsocks-client | v0.0.1 | [bluebu/shadowsocks-privoxy](https://github.com/bluebu/shadowsocks-privoxy) | covert shadowsocks to http proxy & socket5 proxy |
+| 1     | shadowsocks-server | v0.0.1 | [bluebu/shadowsocks-server](https://hub.docker.com/r/bluebu/shadowsocks-server) | shadowsocks server |
+| 2     | shadowsocks-client | v0.0.1 | [bluebu/shadowsocks-privoxy](https://hub.docker.com/r/bluebu/shadowsocks-privoxy) | covert shadowsocks to http proxy & socket5 proxy |
 
 # License
 Copyright (c) 2014-2015 [Rancher Labs, Inc.](http://rancher.com)
