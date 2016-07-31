@@ -1,6 +1,6 @@
 # Rancher Catalog
 
-| No.   | Templates | version | image | service |
+| No.   | Templates | Version | Image | Service |
 | :---: |   :---    |  :---   | :---  |   :---  |
 | 1     | shadowsocks-server | v0.0.1 | [bluebu/shadowsocks-server](https://github.com/bluebu/shadowsocks-server) | shadowsocks server |
 | 2     | shadowsocks-client | v0.0.1 | [bluebu/shadowsocks-privoxy](https://github.com/bluebu/shadowsocks-privoxy) | covert shadowsocks to http proxy & socket5 proxy |
