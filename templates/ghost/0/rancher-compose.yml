@@ -1,0 +1,24 @@
+.catalog:
+  name: Ghost CMS
+  version: v0.0.1
+  description: EGhost CMS
+
+web:
+  scale: 1
+  health_check:
+    port: 2368
+    interval: 30000
+    unhealthy_threshold: 3
+    strategy: recreate
+    response_timeout: 2000
+    healthy_threshold: 2
+
+nginx:
+  scale: 1
+  health_check:
+    port: 80
+    interval: 30000
+    unhealthy_threshold: 3
+    strategy: recreate
+    response_timeout: 2000
+    healthy_threshold: 2

@@ -1,0 +1,21 @@
+web:
+  image: registry-internal.cn-hangzhou.aliyuncs.com/hi-ruby/scys
+  restart: always
+  volumes:
+    - /data/scys/db:/ghost/content/data
+    - /data/scys/config/config.js:/ghost/config.js:ro
+  labels:
+    io.rancher.container.pull_image: always
+    io.rancher.container.hostname_override: container_name
+  entrypoint: env npm start
+
+
+nginx:
+  image: registry-internal.cn-hangzhou.aliyuncs.com/hi-ruby/scys-nginx
+  labels:
+    io.rancher.container.pull_image: always
+    io.rancher.container.hostname_override: container_name
+  links:
+    - web
+  ports:
+    - "80:80"
